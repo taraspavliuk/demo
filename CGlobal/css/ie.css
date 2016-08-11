@@ -1,0 +1,77 @@
+.pie{
+	behavior: url(css/PIE.htc);
+}
+.banner{
+	behavior: url(css/backgroundsize.min.htc);
+}
+.mail{
+	-pie-background: linear-gradient(#e9e8e6, #d1d1d1);
+}
+.search-form input{
+	position: absolute;
+}
+.search-form button{
+	position: absolute;
+	right: 18px;
+	-pie-background: linear-gradient(#60a9d4, #4290c1);
+}
+.search-form button:hover{
+	-pie-background: red;
+}
+.text button{
+	-pie-background: linear-gradient(#60a9d4, #4290c1);
+}
+.text button:hover{
+	-pie-background: red;
+}
+.row1 button{
+	-pie-background: linear-gradient(#ffffff, #e3e3e3);
+}
+.row1 button:hover{
+	-pie-background: #1b83cd;
+}
+.row3 button{
+	-pie-background: linear-gradient(#1d8fd5, #1453ab);
+}
+.row3 button:hover{
+	-pie-background: red;
+}
+h4{
+	*zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.insertBefore(
+            document.createElement("div"),
+            this.childNodes[0]
+        ).className="before",
+        this.appendChild(
+            document.createElement("div")
+        ).className="after");
+}
+h4::after, h4 .after{
+	content: '';
+	float: left;
+	height: 6px;
+	width: 270px;
+	background: url("../img/border.png") no-repeat;
+	margin: 13px 0 18px 0;
+}
+
+.links li{
+	*zoom: expression(
+        this.runtimeStyle.zoom="1",
+        this.insertBefore(
+            document.createElement("div"),
+            this.childNodes[0]
+        ).className="before",
+        this.appendChild(
+            document.createElement("div")
+        ).className="after");
+}
+.links li::before, .links li .before{
+	content: '';
+	float: left;
+	height: 13px;
+	width: 18px;
+	background: url("../img/arrow.png") no-repeat;
+	margin-right: 8px;
+}
